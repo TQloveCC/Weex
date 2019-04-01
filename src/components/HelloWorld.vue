@@ -39,7 +39,7 @@
       },
       methods: {
           sayhello(){
-              console.log("hello");
+              console.log("helloss");
               toast(this.msg);
           },
           topage(){
