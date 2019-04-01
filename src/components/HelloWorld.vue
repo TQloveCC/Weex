@@ -34,7 +34,7 @@
   export default {
       data(){
           return{
-              msg:'哈哈哈11',
+              msg:'哈哈哈1122',
           }
       },
       methods: {
