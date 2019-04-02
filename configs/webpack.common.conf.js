@@ -157,7 +157,19 @@ const webConfig = {
           })
         }],
         exclude: config.excludeModuleReg
-      }
+      },
+        {
+            test: /\.css$/, // 正则匹配要识别的css
+            use: [
+                {
+                    loader: 'style-loader' // 使用style-loader进行处理，位置必须在css-loader前面
+                },
+                {
+                    loader: 'css-loader' // 使用css-loader进行处理
+                }
+            ]
+            //use:['style-loader','css-loader'] // 此处也可以这样写
+        }
     ]
   },
   /*
@@ -205,7 +217,19 @@ const weexConfig = {
           options: vueLoaderConfig({useVue: false})
         }],
         exclude: config.excludeModuleReg
-      }
+      },
+        {
+            test: /\.css$/, // 正则匹配要识别的css
+            use: [
+                {
+                    loader: 'style-loader' // 使用style-loader进行处理，位置必须在css-loader前面
+                },
+                {
+                    loader: 'css-loader' // 使用css-loader进行处理
+                }
+            ]
+            //use:['style-loader','css-loader'] // 此处也可以这样写
+        }
     ]
   },
   /*

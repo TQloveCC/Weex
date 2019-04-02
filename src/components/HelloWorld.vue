@@ -19,6 +19,9 @@
     <div class="btn_div">
       <button @click="sayhello()" class="but">sayhello</button>
       <button @click="topage()" class="but">topage</button>
+      <mt-button type="primary">primary</mt-button>
+      <mt-button type="primary">primary</mt-button>
+      <mt-button size="large">large</mt-button>
     </div>
   </div>
 
